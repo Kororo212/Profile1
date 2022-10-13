@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Body from './container/Body/Body';
+import Footer from './container/Footer/Footer';
+import NavBar from './container/Navbar/NavBar';
+import React,{useEffect} from 'react';
 
 function App() {
+
+  window.addEventListener('scroll',()=>{
+
+    const sections = document.querySelectorAll(".section")
+    const navItems = document.querySelectorAll(".nav-sec")
+
+    let scrollHeight = window.pageYOffset;
+
+    for (let i = 0; i < sections.length; i++) {
+        if (sections[i].offsetTop / 1.1 <= scrollHeight) {
+            for (let j = 0; j < navItems.length; j++) {
+                navItems[j].classList.remove('active');
+            }
+
+            navItems[i].classList.add('active');
+        }
+    }
+
+   
+   
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <NavBar/>
+      <Body/>
+      <Footer/>
     </div>
   );
 }

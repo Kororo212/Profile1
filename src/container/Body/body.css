@@ -1,0 +1,80 @@
+
+.card{
+    margin-top: 10px;
+    
+}
+strong.name{
+    font-size: 37px;
+    text-shadow: 2px 2px rgb(128,128,128);
+}
+
+.sec-title{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.project-title.card-title.h5{
+    text-align: center;
+    font-weight: bold;
+}
+.card.contact-card{
+    max-width: 150px;
+    text-align: center;
+    border: none;
+
+}
+.card.contact-card:hover{
+    cursor: pointer;
+}
+img.card-img-top.contact-img{
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-title.h5{
+    font-size: small;
+}
+.p.card-text{
+   margin-bottom: 2em;
+}
+
+
+
+.card-project.card{
+
+    text-align: center;
+
+}
+p.card-text{
+    text-align: start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+.card-title.h5{
+   padding-top: 10px;
+    text-align: center;
+    
+}
+.learn-project{
+    padding:20px
+}
+.footer-project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:812px) {
+    img.img_back {
+        display: none;
+    }
+   .intro{
+    font-size: medium;
+    margin-top: 2em;
+    margin-left: 3em;
+   }
+   img.my_photo{
+    width: '50%';
+   }
+}

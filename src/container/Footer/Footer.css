@@ -1,0 +1,22 @@
+span.space{
+    margin:0px 5px 10px 5px
+}
+.footer-cont{
+    text-align: center;
+    margin-top: 5px;
+}
+h5,strong{
+    font-size: 12px;
+}
+div#nav-footer a{
+    color: white;
+    text-decoration: none;
+}
+a.footer-container{
+    color: white;
+    text-decoration: none;
+   
+}
+a.footer-container:hover{
+    color:white
+}
