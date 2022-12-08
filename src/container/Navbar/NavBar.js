@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
 
@@ -42,14 +43,17 @@ const scrollToChild = (e)=>{
   docNav.classList.remove("show")
 }
 
-
+ const nav = useNavigate()
+ const goHome = ()=>{
+  nav('/')
+ }
  
   return (
     <Navbar id="navbarSection" variant="dark" className='section-navbar' expand="lg" fixed="top"
       
     >
     <Container>
-      <Navbar.Brand href="#home" 
+      <Navbar.Brand onClick={()=>{goHome()}} 
         style={{fontSize:'25px',background:'-webkit-linear-gradient(#eee, #333)',
            backgroundColor: '#00DBDE',
            backgroundImage: 'linear-gradient(285deg, #00DBDE 0%, #FC00FF 100%)',

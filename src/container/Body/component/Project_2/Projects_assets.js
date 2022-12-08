@@ -1,14 +1,6 @@
 
 const data= process.env.PUBLIC_URL
-export const data_movieapp =  [
-    data+'movie/movie.png',
-    data+'movie/movie_app2.png',
-    data+'movie/movie_app3.png',
-    data+'movie/movie_app4.png',
-    data+'movie/movie_app5.png',
-    data+'movie/movie_app6.png',
 
-]
 export const data_project= [
    {
     project_name:'react-movie_app',
@@ -18,12 +10,12 @@ export const data_project= [
     docker:'https://hub.docker.com/repository/docker/indr01/movietest',
     web:'https://react-movies-1-app.netlify.app',
     path_image:[
-        data+'movie/movie.png',
-        data+'movie/movie_app2.png',
-        data+'movie/movie_app3.png',
-        data+'movie/movie_app4.png',
-        data+'movie/movie_app5.png',
-        data+'movie/movie_app6.png',
+        data+'/movie/movie.png',
+        data+'/movie/movie_app2.png',
+        data+'/movie/movie_app3.png',
+        data+'/movie/movie_app4.png',
+        data+'/movie/movie_app5.png',
+        data+'/movie/movie_app6.png',
     ]
    },
    {
@@ -34,12 +26,12 @@ export const data_project= [
     docker:'https://hub.docker.com/repository/docker/indr01/movietest',
     web:'https://react-movies-1-app.netlify.app',
     path_image:[
-        data+'gamebor/gamebor.png',
-        data+'gamebor/gamebor2.png',
-        data+'gamebor/gamebor3.png',
-        data+'gamebor/gamebor4.png',
-        data+'gamebor/gamebor5.png',
-        data+'gamebor/gamebor6.png',
+        data+'/gamebor/gamebor.png',
+        data+'/gamebor/gamebor2.png',
+        data+'/gamebor/gamebor3.png',
+        data+'/gamebor/gamebor4.png',
+        data+'/gamebor/gamebor5.png',
+        data+'/gamebor/gamebor6.png',
     ]
    }
 ]

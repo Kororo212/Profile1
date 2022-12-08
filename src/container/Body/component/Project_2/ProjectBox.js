@@ -28,9 +28,6 @@ export default function ProjectBox({img}) {
         <meshBasicMaterial attach="material-3" map={image4} />
         <meshBasicMaterial  attach="material-4"  map={image5} />
         <meshBasicMaterial attach="material-5"  map={image6}/>
-
-      
-
     </mesh>
   )
 }

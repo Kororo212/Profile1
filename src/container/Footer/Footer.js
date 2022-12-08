@@ -3,11 +3,11 @@ import{EnvelopeFill, Github, Instagram, Whatsapp} from 'react-bootstrap-icons';
 import './Footer.css'
 function Footer() {
   return (
-    <div style={{backgroundColor:'black',color:'white',padding:'5px',marginTop:'4em'}}>
+    <div style={{backgroundColor:'black',color:'white',padding:'5px',}}>
         <div className='footer-cont'>
           <h5><strong>Hudi Indrawan</strong></h5>
           <h5 style={{fontSize:'12px'}}>Copyright &#169; 2022 </h5>
-          <div style={{display:'flex',width:'100%',height:'max-content',justifyContent:'space-evenly'}}>
+          <div style={{display:'flex',width:'100%',height:'max-content',justifyContent:'space-evenly',margin:'10px'}}>
                            <a className='footer-container' 
                               href="https://github.com/Kororo212">
                                 <Github size={20}/>

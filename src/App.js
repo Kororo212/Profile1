@@ -3,7 +3,9 @@ import './App.css';
 import Body from './container/Body/Body';
 import Footer from './container/Footer/Footer';
 import NavBar from './container/Navbar/NavBar';
-import React,{useEffect} from 'react';
+import React from 'react';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Notfound from './container/Notfound';
 
 function App() {
 
@@ -30,11 +32,16 @@ function App() {
 
 
   return (
+  <BrowserRouter>
     <div >
       <NavBar/>
-      <Body/>
-      <Footer/>
+       <Routes>
+        <Route path="/" element={<Body/>}/>
+        <Route path='/*' element={<Notfound/>}/>
+      </Routes>
+    <Footer/>
     </div>
+  </BrowserRouter>
   );
 }
 

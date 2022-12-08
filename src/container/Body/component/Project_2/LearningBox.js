@@ -9,7 +9,7 @@ export default function LearningBox({data}) {
   return (
     <mesh ref={mesh}  rotation={[60,10,10]}>
         <boxBufferGeometry  attach={"geometry"} args={[3,3,3]}/>
-        <meshBasicMaterial map={ImgLoad}    />
+        <meshBasicMaterial map={ImgLoad}  />
        
     </mesh>
   )

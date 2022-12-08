@@ -1,6 +1,6 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import React, { Suspense, useState } from 'react'
+import React, { Suspense } from 'react'
 import ProjectBox from './ProjectBox'
 import { Loadeed } from './Projects'
 
