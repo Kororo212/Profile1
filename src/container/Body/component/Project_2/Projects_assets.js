@@ -42,18 +42,18 @@ export const data_project= [
 export const data_learn=[
     {
         title:'Html',
-        path_image:data+'learn/html.png',
+        path_image:data+'/learn/html.png',
         info:''
         
     },
     {
         title:'Css',
-        path_image:data+'learn/css.png',
+        path_image:data+'/learn/css.png',
         info:''
     },
     {
         title:'Javascript',
-        path_image:data+'learn/javascript.png',
+        path_image:data+'/learn/javascript.png',
         info:''
     }
 ]
