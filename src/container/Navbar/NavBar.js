@@ -71,7 +71,7 @@ const scrollToChild = (e)=>{
         <Nav className="ms-auto" >
           <Nav.Link className="nav-sec active" href="#home" onClick={scrollTo}  >Home</Nav.Link>
           <Nav.Link className="nav-sec"  href="#about-me" onClick={scrollTo}>About Me</Nav.Link>
-          <Nav.Link className="nav-sec" href = "#project" onClinck={scrollTo}>Project</Nav.Link>
+          <Nav.Link className="nav-sec" href ="#project" onClinck={scrollTo}>Project</Nav.Link>
           {/* <NavDropdown  className="nav-sec"  title= {<span className="drop">Project</span>}>
             <NavDropdown.Item  href="#learning" onClick={scrollToChild} >Learning</NavDropdown.Item>
             <NavDropdown.Item  href="#my-projects" onClick={scrollToChild}>My Projects</NavDropdown.Item>
