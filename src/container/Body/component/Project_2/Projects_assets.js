@@ -53,7 +53,7 @@ export const data_learn=[
     },
     {
         title:'Javascript',
-        path_image:data+'/learn/javascript.png',
+        path_image:data+'/learn/Javascript.png',
         info:''
     }
 ]
