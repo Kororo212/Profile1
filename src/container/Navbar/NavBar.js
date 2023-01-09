@@ -30,6 +30,8 @@ const scrollTo = async(e)=>{
   })
   const docNav = document.getElementById("basic-navbar-nav")
   docNav.classList.remove("show")
+  const btnNav = document.getElementById("btn-nav")
+  btnNav.classList.add("collapsed")
 }
 
 const scrollToChild = (e)=>{
@@ -43,6 +45,8 @@ const scrollToChild = (e)=>{
   })
   const docNav = document.getElementById("basic-navbar-nav")
   docNav.classList.remove("show")
+  const btnNav = document.getElementById("btn-nav")
+  btnNav.classList.add("collapsed")
 }
 
  const nav = useNavigate()
@@ -68,7 +72,7 @@ const scrollToChild = (e)=>{
         
         Hudi Indrawan
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" id="btn-nav" className="custom-toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" >
           <Nav.Link className="nav-sec active" href="#home" onClick={scrollTo}  >Home</Nav.Link>
