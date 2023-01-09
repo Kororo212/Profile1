@@ -13,7 +13,8 @@ function App() {
 
     const sections = document.querySelectorAll(".section")
     const navItems = document.querySelectorAll(".nav-sec")
-
+    
+ 
     let scrollHeight = window.pageYOffset;
 
     for (let i = 0; i < sections.length; i++) {

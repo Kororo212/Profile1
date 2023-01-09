@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import About from './component/About/About';
 import Contact from './component/Contacts/Contact';
 
@@ -26,7 +26,6 @@ const Body = () => {
          <div  id="home" className='section' style={{minHeight:'30em',
             paddingTop:'7em',
             display:'flex',
-            justifyContent:"center",
             flexWrap:'wrap',
             flexDirection:'row',
             alignItems:'center',

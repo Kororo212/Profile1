@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useNavigate } from 'react-router-dom';
+import './Navbar.css'
 
 function NavBar() {
 
@@ -19,8 +19,10 @@ window.addEventListener('scroll',()=>{
 
 const scrollTo = async(e)=>{
   e.preventDefault()
+  const menuBar  = document.querySelectorAll(".collapse")
   const target = e.target.getAttribute('href')
   const doc = document.querySelector(target)?.offsetTop
+   console.log(menuBar)
   window.scrollTo({
     top:doc - 30,
     left:0,
@@ -66,7 +68,7 @@ const scrollToChild = (e)=>{
         
         Hudi Indrawan
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" >
           <Nav.Link className="nav-sec active" href="#home" onClick={scrollTo}  >Home</Nav.Link>
@@ -78,7 +80,7 @@ const scrollToChild = (e)=>{
           </NavDropdown > */}
            
             <NavDropdown className="nav-sec"  title={<span className="drop">Contacts</span>}>
-              <NavDropdown.Item  href="#message-me" onClick={scrollToChild}>Send Me Message</NavDropdown.Item>
+              <NavDropdown.Item  href="#message-me" onClick={scrollToChild}>Message</NavDropdown.Item>
               <NavDropdown.Item  href="#contact-me" onClick={scrollToChild}>Contact's Info</NavDropdown.Item>
             </NavDropdown>
         </Nav>

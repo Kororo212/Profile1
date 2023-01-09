@@ -29,7 +29,7 @@ export default function MyProject({data}) {
 
 
            
-                    <div calassName= "container-project-box" 
+                    <div className= "container-project-box" 
                     style={{ borderBottomColor: '3px solid black',
                             display: 'flex',
                             flexDirection:'column',

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Button, Card, Spinner } from 'react-bootstrap';
+import { Button,  Spinner } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import '../../body.css'
 import axios from 'axios'
 import { filterSendMessagge } from '../../../../config/config';
 import './Contact.css'
-import{EnvelopeFill, Github, Instagram, Mailbox, Whatsapp} from 'react-bootstrap-icons';
+import{EnvelopeFill, Github, Instagram, Whatsapp} from 'react-bootstrap-icons';
 
 
 const Contact = () => {

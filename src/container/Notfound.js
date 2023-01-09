@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Notfound() {
-    const nav = useNavigate()
+    const goto = useNavigate()
     useEffect(()=>{
         setInterval(()=>{
-            nav("/")
+            goto("/")
         },2000)
     },[])
   return (
