@@ -30,37 +30,29 @@ const Body = () => {
             flexDirection:'row',
             alignItems:'center',
             alignContent:'space-between',
-            background: 'linear-gradient(90deg, hsla(225, 75%, 64%, 1) 0%, hsla(325, 75%, 64%, 1) 100%)',
+            background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,195,200,1) 0%, rgba(0,212,255,1) 100%)',
             justifyContent:'space-evenly',
             color:'white',
             
             
             }}>
-              <div style={{maxWidth:'300px',minWidth:'300px',minHeight:'300px'}}>
+              <div className='photo' >
              
                      
                      <img className="my_photo" src={foto} style={{width:'100%',position:'relative'}} 
                            alt='foto_hudi'
                            onLoad={()=>{imageLoaded()}}
                        />
-                     {!load && <Loading from={"hero"}/>} 
+                     {!load && <Loading from={"hero"}/>}
+                     <span className='back'></span>
                        
-                   
-                
-            
-                
-                  
-                 
-                {/* <img className='img_back' src={background} 
-                    style={{position:'absolute',zIndex:'1',width:"35%", maxHeight:"65%",left:'25em',top:'5em'}}
-                /> */}
               </div>
              
               
             <div style={{position:'relative',minHeight:'12em'}}>
-              <div className='intro' style={{position:'relative',marginBottom:'3em',height:'max-content',zIndex:'10'}}>
-                <h3>Hello, my name is <strong className='name'>Hudi Indrawan</strong></h3>
-                <h5>I am a  
+              <div className='intro' style={{position:'relative',textAlign:'center',marginBottom:'3em',height:'max-content',zIndex:'10'}}>
+                <h3><strong className='name'>Hudi Indrawan</strong></h3>
+                {/* <h5>I am a  
                     <span style={{color:"red",fontWeight:'bold',zIndex:15}}>
                     <Typewriter 
                         loop
@@ -72,7 +64,7 @@ const Body = () => {
                         words={[' Web Developer', ' Web Design']}
 
                     />
-                    </span></h5>
+                    </span></h5> */}
               </div>
               <div className='background-sec' style={{position:'absolute',zIndex:'1',top:0}}>
                 <Canvas shadows camera={{position:[0,0,5],fov:50}} size={[`500px`,`300px`]}>

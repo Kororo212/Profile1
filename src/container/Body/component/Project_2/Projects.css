@@ -1,11 +1,12 @@
 #project{
-    background: linear-gradient(-45deg, #111110, #131118, #23a6d5, #e98d32);
+    background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,102,200,1) 0%, rgba(0,255,192,1) 100%);
 	background-size: 400% 400%;
     position:relative;
-    min-height:15em;
+    max-height: max-content;
     padding:4em 1em 3em 1em;
     overflow: hidden;
     animation: 10s gradient linear infinite;
+    color: white;
 }
 @keyframes gradient {
 	0% {
@@ -34,7 +35,7 @@ a.goto:hover{
 }
 
 
-#popup{
+/* #popup{
     display:block;
     z-index:'2000';
     left:0;
@@ -44,10 +45,10 @@ a.goto:hover{
     min-height: 100vh;
     min-width: 100%;
   
-}
-.hide{
+} */
+/* .hide{
     display: none;
-}
+} */
 .container-learn {
     display: flex;
     flex-direction: column;
@@ -75,19 +76,19 @@ a.goto:hover{
     align-items: center;
 }
 .canvas-project {
-    height: 800px;
-    width: 50%;
+    
+    max-width: 310px;
+    max-height: 310px;
     border-radius: 15px;
     border-image:  linear-gradient(rgba(10, 83, 126, 0.438), #4e9f0c42) 30;
     border-width: 4px;
     border-style: solid;
     
-    margin:20px;
 }
 
-.container-project-box{
+/* .container-project-box{
     border-bottom: 1px solid black;
-}
+} */
 
 .popup .project-close{
  display: flex;
@@ -113,10 +114,10 @@ a.goto:hover{
     justify-content: space-around;
     align-items: center;
 }
-.project-close .close-popup:hover{
+/* .project-close .close-popup:hover{
     color:red;
     cursor:pointer;
-}
+} */
 
 @media only screen and (max-width:812px) {
     .canvas-project{

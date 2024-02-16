@@ -28,10 +28,10 @@ export default function Projects() {
 
   return (
     <div id="project" className="section">
-        <div >
+        {/* <div >
             <h3 style={{color:'white',textAlign:'center'}}>Projects</h3>
-        </div>
-        <div style={{textAlign:'center',paddingTop:'2em'}}>
+        </div> */}
+        {/* <div style={{textAlign:'center',paddingTop:'2em'}}>
           <div style={{display:'flex',justifyContent:'center',flexDirection:'column',
             alignItems:'center',
             }}>
@@ -53,8 +53,8 @@ export default function Projects() {
             </Button>
             
           </div>  
-        </div>
-        <div className='popup' style={{
+        </div> */}
+        {/* <div className='popup' style={{
              scale:view?"1":"0",
              height:'100vh',
              width:'100%',
@@ -70,11 +70,11 @@ export default function Projects() {
              color:'white',
              contain:'size style layout'
              
-        }}>
+        }}> */}
 
-            <div className='project-close' >
+            {/* <div className='project-close' >
                   <span className='close-popup'onClick={()=>{setView(false)}} >&times;</span>
-            </div>
+            </div> */}
            
             <div className='container-learn'
               
@@ -108,7 +108,7 @@ export default function Projects() {
                </div>
              </div>
            
-        </div>
+        {/* </div> */}
     </div>
   )
 }

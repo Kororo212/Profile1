@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import ProjectBox from './ProjectBox'
 import { Loadeed } from './Projects'
+import './Projects.css'
 
 
 export default function MyProject({data}) {
@@ -15,10 +16,10 @@ export default function MyProject({data}) {
    
         <div className='sec-myproject'>
                     <div  className="canvas-project">
-                        <Canvas camera={{ fov: 4, position: [10, 0, 28]}} >
+                        <Canvas style={{height:'300px',width:'265px'}} camera={{ fov: 1, position: [10, 0, 28]}} >
                             <OrbitControls enableZoom={true} rotation={0.1} />
                             <ambientLight intensity={1}/>
-                            <directionalLight position={[-2,5,2]} />
+                            <directionalLight position={[2,5,2]} />
                             <Suspense fallback={<Loadeed />}>
                              <ProjectBox  img={data.path_image}/>
                             </Suspense>
@@ -30,12 +31,13 @@ export default function MyProject({data}) {
 
            
                     <div className= "container-project-box" 
-                    style={{ borderBottomColor: '3px solid black',
+                    style={{ 
                             display: 'flex',
                             flexDirection:'column',
                             justifyContent:'space-evenly',  
                             alignItems:'center',
-                            padding:'10px 15px 10px 15px'
+                            padding:'10px 15px 10px 15px',
+                            border:'none'
                             }}>
                         <div>
                             <h2>{data.name}</h2>

@@ -22,7 +22,7 @@ const scrollTo = async(e)=>{
   const menuBar  = document.querySelectorAll(".collapse")
   const target = e.target.getAttribute('href')
   const doc = document.querySelector(target)?.offsetTop
-   console.log(menuBar)
+
   window.scrollTo({
     top:doc - 30,
     left:0,
@@ -62,7 +62,7 @@ const scrollToChild = (e)=>{
       <Navbar.Brand onClick={()=>{goHome()}} 
         style={{fontSize:'25px',background:'-webkit-linear-gradient(#eee, #333)',
            backgroundColor: '#00DBDE',
-           backgroundImage: 'linear-gradient(285deg, #00DBDE 0%, #FC00FF 100%)',
+           backgroundImage: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,102,200,1) 0%, rgba(0,212,255,1) 100%)',
            backgroundSize:'300% 300%',
            webkitBackgroundClip:'text',
            WebkitTextFillColor:'transparent',
@@ -77,13 +77,13 @@ const scrollToChild = (e)=>{
         <Nav className="ms-auto" >
           <Nav.Link className="nav-sec active" href="#home" onClick={scrollTo}  >Home</Nav.Link>
           <Nav.Link className="nav-sec"  href="#about-me" onClick={scrollTo}>About Me</Nav.Link>
-          <Nav.Link className="nav-sec" href ="#project" onClick={scrollTo}>Project</Nav.Link>
+          <Nav.Link className="nav-sec" href ="#project" onClick={scrollTo}>Learn and Project</Nav.Link>
           {/* <NavDropdown  className="nav-sec"  title= {<span className="drop">Project</span>}>
             <NavDropdown.Item  href="#learning" onClick={scrollToChild} >Learning</NavDropdown.Item>
             <NavDropdown.Item  href="#my-projects" onClick={scrollToChild}>My Projects</NavDropdown.Item>
           </NavDropdown > */}
            
-            <NavDropdown className="nav-sec"  title={<span className="drop">Contacts</span>}>
+            <NavDropdown className="nav-sec"  title={<span className="drop">Info</span>}>
               <NavDropdown.Item  href="#message-me" onClick={scrollToChild}>Message</NavDropdown.Item>
               <NavDropdown.Item  href="#contact-me" onClick={scrollToChild}>Contact's Info</NavDropdown.Item>
             </NavDropdown>

@@ -21,7 +21,7 @@ export default function ProjectBox({img}) {
  
   return (
     <mesh  ref={boxRef} rotation={[0,0,0]} rotation-y={Math.PI * 0.25}>
-        <boxBufferGeometry  args={[2,2,2]}/>
+        <boxBufferGeometry  args={[1,1,1]}/>
         <meshBasicMaterial attach="material-0" map={image1} />
         <meshBasicMaterial  attach="material-1"  map={image2} />
         <meshBasicMaterial attach="material-2"  map={image3} />

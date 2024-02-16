@@ -54,7 +54,7 @@ const Contact = () => {
     return (
         <div id='contacts' className='section' style={{minHeight:'max-content',paddingTop:'5em'}}>
             <div className='sec-title'>
-                <h3>My Contact's</h3>
+                <h3>Information</h3>
             </div>
             <div>
                 <div id="message-me">

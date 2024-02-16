@@ -62,9 +62,25 @@ p.card-text{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+.photo{
+    max-width: 300px;
+    max-height: 300px;
+}
+/* .border-about{
+    border:3px solid black
+} */
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+  only screen and (-o-min-device-pixel-ratio: 2/1), 
+  only screen and (-webkit-min-device-pixel-ratio: 2), 
+  only screen and (min-device-pixel-ratio: 2) {
+   .my_photo{
+       image-rendering: optimizeQuality;
+       image-resolution: from-image 300dpi;
+   }
+}  
 @media only screen and (max-width:812px) {
     img.img_back {
         display: none;
@@ -75,6 +91,10 @@ p.card-text{
     margin-left: 3em;
    }
    img.my_photo{
-    width: '50%';
+    width: 100%;
+   }
+   .photo{
+    max-width: 250px;
+    max-height: 250px;
    }
 }
