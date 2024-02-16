@@ -16,7 +16,15 @@ export default function MyProject({data}) {
    
         <div className='sec-myproject'>
                     <div  className="canvas-project">
-                        <Canvas style={{height:'300px',width:'265px'}} camera={{ fov: 1, position: [10, 0, 28]}} >
+                        <Canvas style={{
+                            height:'300px',width:'265px',
+                            maxWidth: '310px',
+                            maxHeight: '310px',
+                            borderRadius: '15px',
+                            borderImage:  'linear-gradient(rgba(10, 83, 126, 0.438), #4e9f0c42) 30',
+                            borderWidth: '4px',
+                            borderStyle: 'solid'}} 
+                      camera={{ fov: 1, position: [10, 0, 28]}} >
                             <OrbitControls enableZoom={true} rotation={0.1} />
                             <ambientLight intensity={1}/>
                             <directionalLight position={[2,5,2]} />
